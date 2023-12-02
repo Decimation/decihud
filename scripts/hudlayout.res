@@ -8,26 +8,245 @@
 	// and ypos values if not perfectly centered.
 	//--------------------------------------------------------------
 
-	KnucklesCrosses
+	"Trispin1"
+	{
+		"ControlName"		"CTFImagePanel"
+		"fieldName"			"Trispin1"
+		"xpos"				"cs-0.5"
+		"ypos"				"cs-0.5"
+		"zpos"				"197"
+		"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+		"tall"				"40" 				// Spinning crosshair size
+		"visible"			"0" 				// Spinning crosshair visible
+		"enabled"			"1" 				// Spinning crosshair enabled
+		"image"				"/replay/thumbnails/Trispin_1" // ch2 for colorful, ch1Frozen for no spin
+		"scaleImage"		"1" 				// Default 1
+		"drawcolor"			"255 255 255 255"
+		"Alpha"				"200" 				// Spinning crosshair opacity
+		"visible_minmode"	"1"
+	}
+	"Trispin2"
+	{
+		"ControlName"		"CTFImagePanel"
+		"fieldName"			"Trispin2"
+		"xpos"				"cs-0.5"
+		"ypos"				"cs-0.5"
+		"zpos"				"197"
+		"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+		"tall"				"40" 				// Spinning crosshair size
+		"visible"			"0" 				// Spinning crosshair visible
+		"enabled"			"1" 				// Spinning crosshair enabled
+		"image"				"/replay/thumbnails/Trispin_2" // ch2 for colorful, ch1Frozen for no spin
+		"scaleImage"		"1" 				// Default 1
+		"drawcolor"			"255 255 255 255"
+		"Alpha"				"200" 				// Spinning crosshair opacity
+		"visible_minmode"	"1"
+	}
+	//"T8521_ch1"
+	//{
+	//	"ControlName"		"CTFImagePanel"
+	//	"fieldName"			"T8521_ch1"
+	//	"xpos"				"cs-0.5"
+	//	"ypos"				"cs-0.5"
+	//	"zpos"				"197"
+	//	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+	//	"tall"				"40" 				// Spinning crosshair size
+	//	"visible"			"1" 				// Spinning crosshair visible
+	//	"enabled"			"1" 				// Spinning crosshair enabled
+	//	"image"				"/replay/thumbnails/T8521_ch1" // ch2 for colorful, ch1Frozen for no spin
+	//	"scaleImage"		"1" 				// Default 1
+	//	"drawcolor"			"255 255 255 255"
+	//	"Alpha"				"255" 				// Spinning crosshair opacity
+	//	"visible_minmode"	"1"
+	//}
+	// "Rainbow_Konr"
+	// {
+	// 	"visible"		"1"
+	// 	"ControlName"	"CTFImagePanel"
+	// 	"fieldName"		"Rainbow_Konr"
+	// 	"xpos"			"c-64"
+	// 	"ypos"			"c-64"
+	// 	"zpos"			"3"
+	// 	"wide"			"128"
+	// 	"tall"			"128"
+	// 	"enabled"		"1"
+	// 	"image"			"replay/thumbnails/rainbow_konr"
+	// 	"scaleImage"	"1"
+	// }
+	//"Guide"
+	//{
+	//	"ControlName"		"CTFImagePanel"
+	//	"fieldName"			"Guide"
+	//	"xpos"				"c-15"
+	//	"ypos"				"c-25"
+	//	"zpos"				"0"
+	//	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+	//	"tall"				"40" 				// Spinning crosshair size
+	//	"visible"			"1" 				// Spinning crosshair visible
+	//	"enabled"			"1" 				// Spinning crosshair enabled
+	//	"image"				"/replay/thumbnails/Guide" // ch2 for colorful, ch1Frozen for no spin
+	//	"scaleImage"		"1" 				// Default 1
+	//	"Alpha"				"255" 				// Spinning crosshair opacity
+	//	"visible_minmode"	"0"
+	//}
+	
+	HL2Crosshair
 	{
 		"visible" 		"0"
 		"enabled" 		"0"
 		
-		"labelText"		"a"
+		"labelText"		"Q"
+		
+		"controlName"	"CExLabel"
+		"fieldName"	 	"HL2Crosshair"
+		"zpos"			"20"
+		"xpos" 		 	"cs-0.5"
+		"ypos" 		 	"cs-0.5"
+		"wide" 		 	"640"
+		"tall" 		 	"480"
+		
+		"font"			"Crosshairs"
+		
+		"textAlignment"	"center"
+		"fgcolor" 		"255 255 255 255" //def Crosshair
+		
+		//"alpha"			"255"
+	}
+	
+	KnucklesCrosses
+	{
+		// >> ahud Crosshair
+		"visible" 		"1"
+		"enabled" 		"1"
+		
+		"labelText"		"i" //r = x, h = circle, i = bold circle
 		
 		"controlName"	"CExLabel"
 		"fieldName"	 	"KnucklesCrosses"
-		"zpos"			"0"
-		"xpos" 		 	"c-25"
-		"ypos" 		 	"c-25"
-		"wide" 		 	"50"
-		"tall" 		 	"50"
+		"zpos"			"20"
+		"xpos" 		 	"cs-0.51" //c-20
+		"ypos" 		 	"cs-0.51" //c-20
+		"wide" 		 	"40"   //40
+		"tall" 		 	"40"   //40
 		
-		"font"			"size:30,outline:off"	// size: range 10-50
+		"font"			"size:18,outline:off"	// size: range 10-50
 												// outline: on or off
 		
 		"textAlignment"	"center"
-		"fgcolor" 		"Crosshair"
+		"fgcolor" 		"0 255 0 50" //def Crosshair
+		
+		//"alpha"			"255"
+	}
+	
+	
+	"ToonDotCrosshair"
+	{
+		"enabled"			"1"
+		"visible"			"1"	[$WINDOWS]
+		
+		"ControlName"		"CExLabel"
+		"fieldName"			"ToonDotCrosshair"
+		"xpos"				"cs-0.51" //c-20
+		"ypos"				"cs-0.51" //c-20
+		"zpos"				"20"
+		"wide"				"40" // Default 40 and 40
+		"tall"				"40"
+		"textAlignment"		"center"
+		"font"				"G_Crosshair"
+		"labelText"			"P"
+		"fgcolor_override"	"0 255 0 255" // def G_CrosshairColor,192 22 35
+		"textinsetx"		"0"
+		"textinsety"		"0"
+	}
+	"ToonDotCrosshairShadow"
+	{
+		"enabled"			"1"
+		"visible"			"1"	[$WINDOWS]
+		
+		"ControlName"		"CExLabel"
+		"fieldName"			"ToonDotCrosshairShadow"
+		"xpos"				"cs-0.51" //c-20
+		"ypos"				"cs-0.51" //c-20
+		"zpos"				"18"
+		"wide"				"40" // Default 40 and 40
+		"tall"				"40"
+		"textAlignment"		"center"
+		"labelText"			"P"
+		"fgcolor_override"	"G_CrosshairShadowColor"	
+		"font"				"G_CrosshairShadow"
+		"textinsetx"		"0"
+		"textinsety"		"0"
+	}
+	"ToonDotCrosshairShadow2"
+	{
+		"enabled"			"1"
+		"visible"			"1"	[$WINDOWS]
+		
+		"ControlName"		"CExLabel"
+		"fieldName"			"ToonDotCrosshairShadow2"
+		"xpos"				"cs-0.51" //c-20
+		"ypos"				"cs-0.51" //c-20
+		"zpos"				"18"
+		"wide"				"40" // Default 40 and 40
+		"tall"				"40"
+		"textAlignment"		"center"
+		"labelText"			"P"
+		"fgcolor_override"	"G_CrosshairShadowColor"	
+		"font"				"G_CrosshairShadow"
+		"textinsetx"		"0"
+		"textinsety"		"0"
+	}
+	
+	"Hitmarker"
+	{
+
+		// ==============================================================================
+		// REGULAR HITMARKER (Cart Point icon)
+		// ==============================================================================
+		
+		// Enable regular hitmarker (If enabled, disable font hitmarker from above)
+		
+			"visible"		"1"															// IH1
+		
+		// ==============================================================================
+		
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"Hitmarker"
+		"xpos"			"cs-0.55" //c-4
+		"ypos"			"cs-0.55" //c-4
+		"zpos"			"20"
+		"wide"			"8"
+		"tall"			"8"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/hitmarker_red"
+		"scaleImage"	"1"	
+		"Alpha"			"0"
+		"teambg_2"		"replay/thumbnails/hitmarker_red"
+		"teambg_3"		"replay/thumbnails/hitmarker_blue"
+	}
+	
+	
+	"CircleDot"
+	{
+		// >> Fog Crosshair
+		"controlName" 		"CExLabel"
+		"fieldName" 		"CircleDot"
+		"visible" 			"0"
+		"visible_minmode"	"0"
+		"enabled" 			"0"
+		
+		"zpos" 				"0"
+		"xpos" 		 	"c-20"
+		"ypos" 		 	"c-20"
+		"wide" 		 	"40"// def 202
+		"tall" 		 	"40"// def 198
+
+		"font" 				"xHairSpread18"
+		"labelText" 		"b" // 8: Circledot
+		"textAlignment" 	"center"
+		
+		//"Alpha" 			"255"
+		"fgcolor" 			"255 255 255 255"
 	}
 	
 	//--------------------------------------------------------------
@@ -411,6 +630,11 @@
 		"MinimumHeight" "30"	//120
 		"MaximumHeight" "60"	//120
 		"MinimumTime" "1" 
+		// MaximumDamage
+		// MaximumTime
+		// TravelTime
+		// FadeOutPercentage
+		// Noise
 	}
 
 	HudCommentary
@@ -562,21 +786,22 @@
 
 	}
 
-	HudSpellMenu
-	{
-		"fieldName" "HudSpellMenu"
-		"visible" "1"
-		"enabled" "1"
-		"wide"	 "640"
-		"tall"	 "480"
-		"zpos" 	"2"
-		"xpos"			"c205"
-		"ypos"			"c91"
-		
-		"TextFont"				"Default"
-		"ItemFont"				"Default"
-		"ItemFontPulsing"		"Default"
-	}
+	
+HudSpellMenu
+{
+	"fieldName" "HudSpellMenu"
+	"visible" "1"
+	"enabled" "1"
+	"wide"	 "640"
+	"tall"	 "480"
+	"zpos" 	"2"
+	"xpos"			"132" //232
+	"ypos"			"r78" //r88
+	
+	"TextFont"				"Default"
+	"ItemFont"				"Default"
+	"ItemFontPulsing"		"Default"
+}
 	
 	HudCloseCaption
 	{
@@ -584,16 +809,16 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"xpos"		"c215"
-		"ypos"		"247"
+		"ypos"		"347" // def 247
 		"wide"		"500"
-		"tall"		"136"
+		"tall"		"30" // def 136 - 50 = 3 lines 1920x1080
 
 		"BgAlpha"	"0"
 
-		"GrowTime"		"0.25"
-		"ItemHiddenTime"	"0.2"  // Nearly same as grow time so that the item doesn't start to show until growth is finished
-		"ItemFadeInTime"	"0.15"	// Once ItemHiddenTime is finished, takes this much longer to fade in
-		"ItemFadeOutTime"	"0.3"
+		"GrowTime"		"0.15"		// Default 0.25
+		"ItemHiddenTime"	"0.05"  // Nearly same as grow time so that the item doesn't start to show until growth is finished (default 0.2)
+		"ItemFadeInTime"	"0.05"	// Once ItemHiddenTime is finished, takes this much longer to fade in (default 0.15)
+		"ItemFadeOutTime"	"0.15" // default 0.3
 		"topoffset"		"0"
 	}
 
@@ -1465,7 +1690,7 @@
 	"MidVerticalLine"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
+		"fieldName"		"MidVerticalLine"
 		"xpos"			"c0"
 		"ypos"			"0"
 		"zpos"			"-5"
@@ -1481,7 +1706,7 @@
 	"MidHorizontalLine"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
+		"fieldName"		"MidHorizontalLine"
 		"xpos"			"0"
 		"ypos"			"c0"
 		"zpos"			"-5"
@@ -1497,7 +1722,7 @@
 	"HorizontalLine1"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
+		"fieldName"		"HorizontalLine1"
 		"xpos"			"0"
 		"ypos"			"c-10"
 		"zpos"			"-5"
@@ -1513,7 +1738,7 @@
 	"HorizontalLine2"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
+		"fieldName"		"HorizontalLine2"
 		"xpos"			"0"
 		"ypos"			"c10"
 		"zpos"			"-5"
@@ -1529,7 +1754,7 @@
 	"VerticalLine1"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
+		"fieldName"		"VerticalLine1"
 		"xpos"			"c100"
 		"ypos"			"0"
 		"zpos"			"-5"
@@ -1545,7 +1770,7 @@
 	"VerticalLine2"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
+		"fieldName"		"VerticalLine2"
 		"xpos"			"c-100"
 		"ypos"			"0"
 		"zpos"			"-5"
@@ -1557,4 +1782,36 @@
 		"enabled"		"0"
 		"fillcolor"		"255 0 0 255"
 	}
+
+	"TransparentViewmodelMask"
+	{
+		// Alpha doesn't work for this, you need to change the texture's alpha.
+		
+		// Method 1: Uncomment alpha and place in hudlayout.res with "visible" set to 1
+		// testhudanim EnableTransparency will run the EnableTransparency event and enable the transparent viewmodels but this requires cheats.
+		
+		// Method 2: Place in hudachievementtrackeritem.res
+		// hud_achievement_tracker 1 will toggle the transparent viewmodels but will make any HUD element in front of it transparent as well.
+		
+		// Method 3: Place in hudlayout.res traditionally
+		// cl_hud_minmode 1 will toggle the transparent viewmodels if the HUD element is inside of hudlayout.res but the command causes lag for a few seconds.
+		
+		// Read autoexec2 for more info
+		
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TransparentViewmodelMask"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-100"
+		"wide"			"f0"
+		"tall"			"480"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/REFRACTnormal_transparent"
+		"scaleImage"	"1"
+		"visible_minmode" "1"
+		//"alpha" "255"
+	}
+
+	
 }

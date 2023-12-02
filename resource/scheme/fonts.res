@@ -1201,15 +1201,56 @@ Scheme
 				"weight"		"800"
 			}
 		}
+		BNTitle56
+	{
+		"1"
+		{
+			"name"			"BigNoodleTooOblique"
+			"tall"			"56" [$WINDOWS] //50
+			"weight"		"400"
+			"additive"		"0"
+			"antialias" 	"1"
+		}
+	}
+	
+	Crosshairs
+	{
+		"1"
+		{
+			"name"		"HalfLife2"
+			"tall"		"40" [!$OSX]
+			"tall"		"41" [$OSX]
+			"weight"	"0"
+			"antialias" "0"
+			"additive"	"1"
+			"custom"	"1"
+			"yres"		"1 10000"
+		}
+	}
+	
+	"G_HeadsIcon"
+	{
+		"1"
+		{
+			"name"			"ToonHUD Icons"
+			"tall"			"12" [$WINDOWS]
+			"tall"			"18" [!$WINDOWS]
+			"weight"		"400"
+			"additive"		"0"
+			"antialias" 	"1"
+		}
+	}
 		CenterPrintText
 		{
+			// THIS IS THE SOURCEPAWN "ShowSyncHudText" FONT
+			// default Trebuchet MS
 			// note that this scales with the screen resolution
 			"1"
 			{
-				"name"		"Trebuchet MS" [!$OSX]
+				"name"		"Product Sans" [!$OSX]
 				"name"		"Helvetica" [$OSX]
-				"tall"		"18"
-				"weight"	"900"
+				"tall"		"13" // def 18
+				"weight"	"500" // def 900
 				"antialias" "1"
 				"additive"	"1"
 			}

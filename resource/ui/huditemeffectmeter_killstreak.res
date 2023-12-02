@@ -55,48 +55,80 @@
 	}
 
 	"ItemEffectMeterCount"
+{
+	"ControlName"			"CExLabel"
+	"fieldName"				"ItemEffectMeterCount"
+	"xpos"					"10" //2
+	"ypos"					"10"
+	"zpos"					"2"
+	"wide"					"30"
+	"tall"					"20"	
+	"pinCorner"				"2"
+	"visible"				"1"
+	"enabled"				"1"
+	"tabPosition"			"0"
+	"labelText"				"%progresscount%"
+	"textAlignment"			"center"
+	"dulltext"				"0"
+	"brighttext"			"0"
+	"font"					"aRegular20"
+	"fgcolor"				"Killstreak"
+}
+"ItemEffectMeterCountShadow"
+{
+	"ControlName"			"CExLabel"
+	"fieldName"				"ItemEffectMeterCountShadow"
+	"xpos"					"-1"
+	"ypos"					"-1"
+	"zpos"					"2"
+	"wide"					"30"
+	"tall"					"20"	
+	"pinCorner"				"2"
+	"visible"				"1"
+	"enabled"				"1"
+	"tabPosition"			"0"
+	"labelText"				"%progresscount%"
+	"textAlignment"			"center"
+	"dulltext"				"0"
+	"brighttext"			"0"
+	"font"					"aRegular20"
+	"fgcolor"				"ShadowBlack"
+
+	"pin_to_sibling"	"ItemEffectMeterCount"
+	"pin_corner_to_sibling" "PIN_TOPLEFT"
+	"pin_to_sibling_corner" "PIN_TOPLEFT"
+}
+	"StreakIconF"
 	{
 		"ControlName"			"CExLabel"
-		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"2"
-		"ypos"					"10"
+		"fieldName"				"StreakIconF"
+		"xpos"					"6" //c+264
+		"ypos"					"8" //r57
 		"zpos"					"2"
-		"wide"					"30"
-		"tall"					"20"
-		"pinCorner"				"2"
+		"wide"					"16"
+		"tall"					"25"
 		"visible"				"1"
 		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"%progresscount%"
-		"textAlignment"			"center"
-		"dulltext"				"0"
-		"brighttext"			"0"
-		"font"					"aRegular20"
-		"fgcolor"				"Killstreak"
+		"labelText"				"K"
+		"textAlignment"			"west"
+		"font"					"G_HeadsIcon"
+		"fgcolor_override"		"Killstreak" // def G_KillstreakIcon
 	}
-
-	"ItemEffectMeterCountShadow"
+	"StreakIconShadowF"
 	{
 		"ControlName"			"CExLabel"
-		"fieldName"				"ItemEffectMeterCountShadow"
-		"xpos"					"-1"
-		"ypos"					"-1"
-		"zpos"					"1"
-		"wide"					"30"
-		"tall"					"20"
-		"pinCorner"				"2"
+		"fieldName"				"StreakIconShadowF"
+		"xpos"					"7" //c+265
+		"ypos"					"9" //r56
+		"zpos"					"2"
+		"wide"					"16"
+		"tall"					"25"
 		"visible"				"1"
 		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"%progresscount%"
-		"textAlignment"			"center"
-		"dulltext"				"0"
-		"brighttext"			"0"
-		"font"					"aRegular20"
-		"fgcolor"				"ShadowBlack"
-
-		"pin_to_sibling"	"ItemEffectMeterCount"
-		"pin_corner_to_sibling" "PIN_TOPLEFT"
-		"pin_to_sibling_corner" "PIN_TOPLEFT"
+		"labelText"				"K"
+		"textAlignment"			"west"
+		"font"					"G_HeadsIcon"
+		"fgcolor_override"		"G_Shadow"
 	}
+
 }

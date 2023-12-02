@@ -41,6 +41,7 @@
 		"image"			"../hud/health_over_bg"
 		"scaleImage"	"1"
 	}
+	
 	"PlayerStatusHealthValueSpec"
 	{
 		"ControlName"	"CExLabel"

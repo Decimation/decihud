@@ -1,4 +1,4 @@
-// Don't edit these lines
+ // Don't edit these lines
 
 #base "scheme/basesettings.res"
 #base "scheme/borders.res"
@@ -55,6 +55,11 @@ Scheme
 		{
 			"font" "resource/fonts/KnucklesCrosses.ttf"
 			"name" "KnucklesCrosses"
+		}
+		"11"
+		{
+			"font" "resource/fonts/ToonHUDCrosshairs.ttf"
+			"name"	"ToonHUD Crosshairs"
 		}
 	}
 }

@@ -8,6 +8,9 @@
 		"delta_item_end_y"		"0"
 		"PositiveColor"			"Healing Numbers" //Heal
 		"NegativeColor"			"Damage Numbers" //Damage
+		"EventColor"            "173 250 186 255" // med drops
+		"RedRobotScoreColor"    "255 0 0 128" // robot destruction
+		"BlueRobotScoreColor"   "255 0 0 128" // robot destruction
 		"delta_lifetime"		"2"
 		"delta_item_font"		"aRegular20Outline"
 		"delta_item_font_big"	"aRegular20Outline"

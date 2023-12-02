@@ -2,6 +2,134 @@ Scheme
 {
 	Fonts
 	{
+		"G_Crosshair"
+		{
+			"1"
+			{
+				"name"			"ToonHUD Crosshairs"
+				"tall"			"24"	// Crosshair Size
+				"weight"		"400"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"G_CrosshairShadow"
+		{
+			"1"
+			{
+				"name"			"ToonHUD Crosshairs"
+				"tall"			"24"	// Crosshair Shadow Size
+				"weight"		"400"
+				"additive"		"0"
+				"antialias" 	"1"
+				"blur"			"2" // Crosshair Shadow Blur
+			}
+		}
+
+		"G_CrosshairShadowSharp"
+		{
+			"1"
+			{
+				"name"			"ToonHUD Crosshairs"
+				"tall"			"24"	// Crosshair Shadow Size
+				"weight"		"400"
+				"additive"		"0"
+				"antialias" 	"1"
+				"blur"			"0"
+			}
+		}
+		
+		"xHairSpread"
+		{
+			"1"
+			{
+				"name" 			"Crosshairs"
+				"tall" 			"28"
+				"weight" 		"0"
+				"antialias" 	"1"
+			}
+		}
+		
+		"xHairSpread24"
+		{
+			"1"
+			{
+				"name" 			"Crosshairs"
+				"tall" 			"24"
+				"weight" 		"0"
+				"antialias" 	"1"
+			}
+		}
+		
+				
+		"xHairSpread"
+		{
+			"1"
+			{
+				"name" 			"Crosshairs"
+				"tall" 			"28"
+				"weight" 		"0"
+				"antialias" 	"1"
+			}
+		}
+		
+		"xHairSpread24"
+		{
+			"1"
+			{
+				"name" 			"Crosshairs"
+				"tall" 			"24"
+				"weight" 		"0"
+				"antialias" 	"1"
+			}
+		}
+		
+		"CODHitmarker"
+		{
+			"1"
+			{
+				"name"		"xhairs"
+				"tall"		"3"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias"	"1"
+				"outline"	"0"
+			}
+		}
+		
+		"xHairX"
+		{
+			"1"
+			{
+				"name"		"crtfc"
+				"tall"		"4"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"outline"	"0"
+			}
+		}		
+		"xHair"
+		{
+			"1"
+			{
+				"name" "KnucklesCrosses"
+				"tall" "20"
+				"weight" "0"
+				"antialias" "1"
+			}
+		}
+		"xHair2"
+		{
+			"1"
+			{
+				"name" "KnucklesCrosses"
+				"tall" "16"
+				"weight" "0"
+				"antialias" "1"
+			}
+		}
 		"size:10,outline:off"
 		{
 			"1"

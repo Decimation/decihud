@@ -2,6 +2,13 @@ Scheme
 {
 	Colors
 	{
+		// >> ToonHUD Colors
+		"G_CrosshairColor"			"255 255 255 255" 	// Crosshair color
+		"G_CrosshairShadowColor"	"000 000 000 255"	// Crosshair shadow color
+		"G_Crosshair2Color"			"255 255 255 255" 	// Crosshair color
+		"G_Shadow"					"0 0 0 220" 		// Shadow color
+		"G_KillstreakIcon"			"175 175 175 255" 	// Killstreak icon color
+		
 		//---------------------------------------------
 		// CUSTOM COLORS
 		//---------------------------------------------
