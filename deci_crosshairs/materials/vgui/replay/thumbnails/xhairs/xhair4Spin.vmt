@@ -1,0 +1,73 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"vgui\replay\thumbnails\xhairs\xhair4" // Crosshair1 shape
+	"$startAngle"		"0"	// Crosshair1 angle
+	"$rotateSpeedDir"	"900"	// Crosshair1 rotate speed
+	"$rotateSpeed"		"900"
+	"$multiplier"		"-1"
+	"$angle"			"0"
+	"$translate"		"[0.0 0.0]"
+	"$center"			"[0.5 0.5]"
+	"$vertexcolor"		"1"
+	"$no_fullbright"	"1"
+	"$vertexalpha"		"1"
+	"$ignorez"			"1"
+	"$translucent"		"1"
+	
+	"$flashperiod" 5    // the time it takes (in seconds) for a full color cycle
+	"$flashoffset" 0.5    // determines the shift between the green sine and the red/blue ones
+	                      // 0 or the flashperiod value would be a boring black to white flashing (the rgb values would always stay identical to each-others)
+						  // half the flashperiod value results in a flashing between pure green (lime) and pink
+						  // other values, such as a quarter of the flashperiod, allows for more variety
+	
+	"Proxies"
+	{
+		"Multiply"
+		{
+			"srcVar1" 		"$rotateSpeedDir"
+			"srcVar2" 		"$multiplier"
+			"resultVar" 	"$rotateSpeed"
+		}
+		"LinearRamp"
+		{
+			"rate" 			"$rotateSpeed"
+			"initialValue" 	"$startAngle"
+			"resultVar" 	"$angle"
+		}
+		"TextureTransform"
+		{
+			"translateVar" 	"$translate"
+			"rotateVar" 	"$angle"
+			"centerVar" 	"$center"
+			"resultVar" 	"$basetexturetransform"
+		}
+
+		
+		"Sine" // red
+		{
+			"sinemin"		0.0
+			"sinemax"		1.0
+			"sineperiod"	"$flashperiod"
+			"timeoffset"    "$flashoffset"
+			"resultVar"		"$color[0]"
+		}
+        
+		"Sine" // green
+		{
+			"sinemin"		0.0
+			"sinemax"		1.0
+			"sineperiod"	"$flashperiod"
+			"resultVar"		"$color[1]"
+		}
+		
+		"Sine" // blue
+		{
+			"sinemin"		0.0
+			"sinemax"		1.0
+			"sineperiod"	"$flashperiod"
+			"timeoffset"    "$flashoffset"
+			"resultVar"		"$color[2]"
+		}
+	}
+}
+

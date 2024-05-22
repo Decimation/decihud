@@ -1,0 +1,68 @@
+"UnlitGeneric"
+{
+	"$rotationrate"				720   	 		// The number of degrees the crosshair is rotated by in 1 second (720 default)
+	"$flashperiod" 				2    			// The time it takes (in seconds) for a full color cycle (1.0 default)
+	"$flashoffset" 				0.50    		// Determines the shift between the green sine and the red/blue ones (0.5 default)
+												// 0 or the flashperiod value would be a boring black to white flashing (the rgb values would always stay identical to each-others). 
+												// Half the flashperiod value results in a flashing between pure green (lime) and pink.
+												// Other values, such as a quarter of the flashperiod, allows for more variety.
+
+	"$translucent"				1
+	"$basetexture"				"vgui\replay\thumbnails\MultispinColored"
+	
+	"$angle"					0.0
+	"$translate"				"[0.0 0.0]"
+	"$center"					"[0.5 0.5]"
+	
+	"$color"					"[0.0 0.0 0.0]" //def "[0.0 0.0 0.0]"
+	
+	"$vertexcolor"				1
+	"$no_fullbright"			1
+	"$vertexalpha"				1
+	"$ignorez"					1
+	
+	"Proxies"
+	{
+		"LinearRamp"
+		{
+			"rate" 				"$rotationrate"
+			"initialValue"		0.0
+			"resultVar"			"$angle"
+		}
+		
+		"TextureTransform"
+		{
+			"translateVar"		"$translate"
+			"rotateVar"			"$angle"
+			"centerVar"			"$center"
+			"resultVar"			"$basetexturetransform"
+		}
+		
+		"Sine" // red
+		{
+			"sinemin"			0.0
+			"sinemax"			1.0 //def 1.0
+			"sineperiod"		"$flashperiod"
+			"resultVar"			"$color[0]"
+		}
+
+		"Sine" // green
+		{
+			"sinemin"			0.0
+			"sinemax"			1.0 //def 1.0
+			"sineperiod"		"$flashperiod"
+			"timeoffset"    	"$flashoffset"
+			"resultVar"			"$color[1]"
+		}
+		
+		"Sine" // blue
+		{
+			"sinemin"			0.0
+			"sinemax"			1.0 //def 1.0
+			"sineperiod"		"$flashperiod"
+			"resultVar"			"$color[2]"
+		}
+		
+	}
+	
+}

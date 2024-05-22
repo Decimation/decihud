@@ -8,38 +8,90 @@
 	// and ypos values if not perfectly centered.
 	//--------------------------------------------------------------
 
-	"Trispin1"
+	// "T8521_ch1x_a"
+	// {
+	// 	"ControlName"		"CTFImagePanel"
+	// 	"fieldName"			"T8521_ch1x_a"
+	// 	"xpos"				"cs-0.5"
+	// 	"ypos"				"cs-0.5"
+	// 	"zpos"				"197"
+	// 	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+	// 	"tall"				"40" 				// Spinning crosshair size
+	// 	"visible"			"1" 				// Spinning crosshair visible
+	// 	"enabled"			"1" 				// Spinning crosshair enabled
+	// 	"image"				"/replay/thumbnails/T8521_ch1x_a" // ch2 for colorful, ch1Frozen for no spin
+	// 	"scaleImage"		"1" 				// Default 1
+	// 	"drawcolor"			"255 255 255 255"
+	// 	"Alpha"				"200" 				// Spinning crosshair opacity
+	// 	"visible_minmode"	"1"
+	// }
+	// "T8521_ch1x_b"
+	// {
+	// 	"ControlName"		"CTFImagePanel"
+	// 	"fieldName"			"T8521_ch1x_b"
+	// 	"xpos"				"cs-0.5"
+	// 	"ypos"				"cs-0.5"
+	// 	"zpos"				"197"
+	// 	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+	// 	"tall"				"40" 				// Spinning crosshair size
+	// 	"visible"			"1" 				// Spinning crosshair visible
+	// 	"enabled"			"1" 				// Spinning crosshair enabled
+	// 	"image"				"/replay/thumbnails/T8521_ch1x_b" // ch2 for colorful, ch1Frozen for no spin
+	// 	"scaleImage"		"1" 				// Default 1
+	// 	"drawcolor"			"255 255 255 255"
+	// 	"Alpha"				"200" 				// Spinning crosshair opacity
+	// 	"visible_minmode"	"1"
+	// }
+
+	// "Trispin1"
+	// {
+	// 	"ControlName"		"CTFImagePanel"
+	// 	"fieldName"			"Trispin1"
+	// 	"xpos"				"cs-0.5"
+	// 	"ypos"				"cs-0.5"
+	// 	"zpos"				"197"
+	// 	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+	// 	"tall"				"40" 				// Spinning crosshair size
+	// 	"visible"			"1" 				// Spinning crosshair visible
+	// 	"enabled"			"1" 				// Spinning crosshair enabled
+	// 	"image"				"/replay/thumbnails/Trispin_1" // ch2 for colorful, ch1Frozen for no spin
+	// 	"scaleImage"		"1" 				// Default 1
+	// 	"drawcolor"			"255 255 255 255"
+	// 	"Alpha"				"200" 				// Spinning crosshair opacity
+	// 	"visible_minmode"	"1"
+	// }
+	// "Trispin2"
+	// {
+	// 	"ControlName"		"CTFImagePanel"
+	// 	"fieldName"			"Trispin2"
+	// 	"xpos"				"cs-0.5"
+	// 	"ypos"				"cs-0.5"
+	// 	"zpos"				"197"
+	// 	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+	// 	"tall"				"40" 				// Spinning crosshair size
+	// 	"visible"			"1" 				// Spinning crosshair visible
+	// 	"enabled"			"1" 				// Spinning crosshair enabled
+	// 	"image"				"/replay/thumbnails/Trispin_2" // ch2 for colorful, ch1Frozen for no spin
+	// 	"scaleImage"		"1" 				// Default 1
+	// 	"drawcolor"			"255 255 255 255"
+	// 	"Alpha"				"200" 				// Spinning crosshair opacity
+	// 	"visible_minmode"	"1"
+	// }
+	"T8521_ch2"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"			"Trispin1"
+		"fieldName"			"T8521_ch2"
 		"xpos"				"cs-0.5"
 		"ypos"				"cs-0.5"
 		"zpos"				"197"
 		"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
 		"tall"				"40" 				// Spinning crosshair size
-		"visible"			"0" 				// Spinning crosshair visible
+		"visible"			"1" 				// Spinning crosshair visible
 		"enabled"			"1" 				// Spinning crosshair enabled
-		"image"				"/replay/thumbnails/Trispin_1" // ch2 for colorful, ch1Frozen for no spin
+		"image"				"/replay/thumbnails/T8521_ch2a" // ch2 for colorful, ch1Frozen for no spin
 		"scaleImage"		"1" 				// Default 1
-		"drawcolor"			"255 255 255 255"
-		"Alpha"				"200" 				// Spinning crosshair opacity
-		"visible_minmode"	"1"
-	}
-	"Trispin2"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"			"Trispin2"
-		"xpos"				"cs-0.5"
-		"ypos"				"cs-0.5"
-		"zpos"				"197"
-		"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
-		"tall"				"40" 				// Spinning crosshair size
-		"visible"			"0" 				// Spinning crosshair visible
-		"enabled"			"1" 				// Spinning crosshair enabled
-		"image"				"/replay/thumbnails/Trispin_2" // ch2 for colorful, ch1Frozen for no spin
-		"scaleImage"		"1" 				// Default 1
-		"drawcolor"			"255 255 255 255"
-		"Alpha"				"200" 				// Spinning crosshair opacity
+		// "drawcolor"			"255 255 255 255"
+		// "Alpha"				"255" 				// Spinning crosshair opacity
 		"visible_minmode"	"1"
 	}
 	//"T8521_ch1"
@@ -73,22 +125,22 @@
 	// 	"image"			"replay/thumbnails/rainbow_konr"
 	// 	"scaleImage"	"1"
 	// }
-	//"Guide"
-	//{
-	//	"ControlName"		"CTFImagePanel"
-	//	"fieldName"			"Guide"
-	//	"xpos"				"c-15"
-	//	"ypos"				"c-25"
-	//	"zpos"				"0"
-	//	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
-	//	"tall"				"40" 				// Spinning crosshair size
-	//	"visible"			"1" 				// Spinning crosshair visible
-	//	"enabled"			"1" 				// Spinning crosshair enabled
-	//	"image"				"/replay/thumbnails/Guide" // ch2 for colorful, ch1Frozen for no spin
-	//	"scaleImage"		"1" 				// Default 1
-	//	"Alpha"				"255" 				// Spinning crosshair opacity
-	//	"visible_minmode"	"0"
-	//}
+	// "Guide"
+	// {
+	// 	"ControlName"		"CTFImagePanel"
+	// 	"fieldName"			"Guide"
+	// 	"xpos"				"c-15"
+	// 	"ypos"				"c-25"
+	// 	"zpos"				"0"
+	// 	"wide"				"40" 				// Spinning crosshair size (50 and 50 to fit ToonHUD crosshair)
+	// 	"tall"				"40" 				// Spinning crosshair size
+	// 	"visible"			"1" 				// Spinning crosshair visible
+	// 	"enabled"			"1" 				// Spinning crosshair enabled
+	// 	"image"				"/replay/thumbnails/Guide" // ch2 for colorful, ch1Frozen for no spin
+	// 	"scaleImage"		"1" 				// Default 1
+	// 	"Alpha"				"255" 				// Spinning crosshair opacity
+	// 	"visible_minmode"	"0"
+	// }
 	
 	HL2Crosshair
 	{

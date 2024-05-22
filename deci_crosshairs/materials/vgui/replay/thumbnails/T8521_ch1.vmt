@@ -1,0 +1,68 @@
+"UnlitGeneric"
+{
+	"$rotationrate" 720   // the number of degrees the crosshair is rotated by in 1 second
+	"$flashperiod" 1.0    // the time it takes (in seconds) for a full color cycle
+	"$flashoffset" 0.5    // determines the shift between the green sine and the red/blue ones
+	                      // 0 or the flashperiod value would be a boring black to white flashing (the rgb values would always stay identical to each-others)
+						  // half the flashperiod value results in a flashing between pure green (lime) and pink
+						  // other values, such as a quarter of the flashperiod, allows for more variety
+
+
+	"$translucent"	1
+	"$basetexture"	"vgui\replay\thumbnails\T8521_ch1"
+	
+	"$angle"		0.0
+	"$translate"	"[0.0 0.0]"
+	"$center"		"[0.5 0.5]"
+	
+	"$color"	"[0.0 0.0 0.0]"
+	
+	"$vertexcolor"		1
+	"$no_fullbright"	1
+	"$vertexalpha"		1
+	"$ignorez"			1
+	
+	"Proxies"
+	{
+		"LinearRamp"
+		{
+			"rate" 			"$rotationrate"
+			"initialValue"	0.0
+			"resultVar"		"$angle"
+		}
+		"TextureTransform"
+		{
+			"translateVar"	"$translate"
+			"rotateVar"		"$angle"
+			"centerVar"		"$center"
+			"resultVar"		"$basetexturetransform"
+		}
+		
+		"Sine" // red
+		{
+			"sinemin"		0.0
+			"sinemax"		1.0
+			"sineperiod"	"$flashperiod"
+			"resultVar"		"$color[0]"
+		}
+
+		"Sine" // green
+		{
+			"sinemin"		0.0
+			"sinemax"		1.0
+			"sineperiod"	"$flashperiod"
+			"timeoffset"    "$flashoffset"
+			"resultVar"		"$color[1]"
+		}
+		
+		"Sine" // blue
+		{
+			"sinemin"		0.0
+			"sinemax"		1.0
+			"sineperiod"	"$flashperiod"
+			"resultVar"		"$color[2]"
+		}
+		
+	}
+	
+}
